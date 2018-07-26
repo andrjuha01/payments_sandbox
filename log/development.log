@@ -55,3 +55,22 @@ Migrating to DeviseCreateUsers (20180726091713)
   ↳ bin/rails:9
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for 10.0.2.2 at 2018-07-26 09:26:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/vagrant/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (8.0ms)
+Completed 200 OK in 40ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2018-07-26 09:27:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/vagrant/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/vagrant/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /home/vagrant/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/devise-4.4.3/app/views/devise/registrations/new.html.erb within layouts/application (1957.4ms)
+Completed 200 OK in 2751ms (Views: 2727.3ms | ActiveRecord: 4.0ms)
+
+
